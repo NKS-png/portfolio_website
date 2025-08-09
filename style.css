@@ -1,4 +1,27 @@
 /* Institutional Dark Theme with Neon Effects */
+/* Prevent right side overflow on mobile */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Ensure no element exceeds viewport width */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Specifically for images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Fix flex/grid children pushing layout */
+section, div {
+    overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Aalto', 'Segoe UI', Arial, sans-serif;
